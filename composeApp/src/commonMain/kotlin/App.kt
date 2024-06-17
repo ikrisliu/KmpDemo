@@ -11,6 +11,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.unit.dp
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -46,10 +47,12 @@ fun App() {
 //            Lemon()
 //            TipTimeLayout()
 //            ArtSpace()
-            AffirmationApp()
+//            AffirmationApp()
+            TopicGrid(modifier = Modifier.padding(8.dp))
         }
     }
 }
+
 
 fun parseJson() {
     val json = Json {
